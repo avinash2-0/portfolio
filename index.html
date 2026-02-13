@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avinash Utkarsh Singh</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+
+html{
+scroll-behavior:smooth;
+scroll-padding-top:100px;
+}
+
+body{
+margin:0;
+font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+background:#0b1220;
+color:#e2e8f0;
+line-height:1.8;
+}
+
+/* NAVBAR */
+nav{
+background:#0b1220;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:22px 0;
+border-bottom:1px solid rgba(255,255,255,0.05);
+display:flex;
+justify-content:center;
+z-index:1000;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+gap:35px;
+margin:0;
+padding:0;
+flex-wrap:wrap;       /* allows wrapping on small screens */
+justify-content:center;
+}
+
+nav li{
+white-space:nowrap;   /* prevents text breaking */
+}
+
+
+
+nav a{
+text-decoration:none;
+color:#94a3b8;
+font-weight:500;
+font-size:0.95rem;
+letter-spacing:0.5px;
+transition:0.3s ease;
+}
+
+nav a:hover{
+color:#ffffff;
+}
+
+header{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+
+background:
+linear-gradient(rgba(11,18,32,0.85), rgba(11,18,32,0.85)),
+url("bg.jpg");
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+}
+
+
+.profile-pic{
+width:100px;
+height:100px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:40px;
+transition:0.3s ease;
+}
+
+.profile-pic:hover{
+transform:scale(1.05);
+}
+
+header h1{
+font-size:3.2rem;
+font-weight:600;
+margin-bottom:15px;
+letter-spacing:1px;
+}
+
+header p{
+font-size:1.2rem;
+color:#94a3b8;
+max-width:600px;
+margin:0 auto;
+}
+
+/* Resume Button */
+.resume-btn{
+display:inline-block;
+margin-top:35px;
+padding:10px 30px;
+border:1px solid #94a3b8;
+background:none;
+color:#e2e8f0;
+text-decoration:none;
+border-radius:3px;
+transition:0.3s ease;
+}
+
+.resume-btn:hover{
+background:#e2e8f0;
+color:#0b1220;
+}
+
+/* Social Icons */
+.social-icons{
+margin-top:35px;
+display:flex;
+justify-content:center;
+gap:28px;
+}
+
+.social-icons a{
+color:#64748b;
+font-size:1.2rem;
+transition:0.3s ease;
+}
+
+.social-icons a:hover{
+color:#ffffff;
+transform:translateY(-3px);
+}
+
+/* SECTIONS */
+section{
+max-width:750px;
+margin:140px auto;
+padding:0 20px;
+}
+
+h2{
+font-size:1.8rem;
+font-weight:600;
+margin-bottom:35px;
+color:#ffffff;
+position:relative;
+}
+
+/* subtle underline effect */
+h2::after{
+content:"";
+width:40px;
+height:2px;
+background:#64748b;
+position:absolute;
+bottom:-10px;
+left:0;
+}
+
+/* Content blocks */
+.card{
+margin-bottom:35px;
+opacity:0;
+transform:translateY(20px);
+animation:fadeUp 0.6s ease forwards;
+}
+
+.card h3{
+font-size:1.25rem;
+font-weight:600;
+margin-bottom:6px;
+color:#ffffff;
+}
+
+.card p{
+color:#94a3b8;
+}
+
+/* Skills simple style */
+.skill-box{
+margin-bottom:10px;
+color:#cbd5e1;
+}
+
+/* Remove grid look */
+.education-grid,
+.project-grid,
+.skills{
+display:block;
+}
+
+/* Footer */
+footer{
+text-align:center;
+padding:80px 20px;
+color:#475569;
+border-top:1px solid rgba(255,255,255,0.05);
+margin-top:100px;
+}
+
+/* Fade animation */
+@keyframes fadeUp{
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+@media(max-width:768px){
+
+.education-grid,
+.project-grid,
+.skills{
+grid-template-columns:1fr;
+}
+
+header h1{
+font-size:2.2rem;
+}
+
+nav ul{
+flex-direction:column;
+gap:15px;
+align-items:center;
+}
+
+}
+
+
+
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<ul>
+<li><a href="#">HOME</a></li>
+<li><a href="#about">ABOUT</a></li>
+<li><a href="#education">EDUCATION</a></li>
+<li><a href="#skills">SKILLS</a></li>
+<li><a href="#projects">PROJECTS</a></li>
+<li><a href="#certifications">CERTIFICATIONS</a></li>
+<li><a href="#contact">CONTACT</a></li>
+</ul>
+</nav>
+
+<header>
+
+<img src="profile.jpg" class="profile-pic">
+
+<h1>Avinash Utkarsh Singh</h1>
+<p>BTech (CSE) Undergraduate & Software Developer</p>
+
+<a href="resume.pdf" class="resume-btn" target="_blank">Download Resume</a>
+
+<div class="social-icons">
+<a href="https://github.com/avinash2-0" target="_blank"><i class="fab fa-github"></i></a>
+<a href="https://www.linkedin.com/in/avinash-utkarsh-singh-396799351" target="_blank"><i class="fab fa-linkedin"></i></a>
+<a href="mailto:avinash42k@gmail.com"><i class="fas fa-envelope"></i></a>
+<a href="tel:+916202210548"><i class="fas fa-phone"></i></a>
+</div>
+
+</header>
+
+<section id="about">
+<h2>ABOUT</h2>
+<div class="card">
+<p>Software Developer with strong foundations in Python, AI model development, and full-stack fundamentals. Experienced in building scalable applications and developing clean, efficient system solutions.</p>
+</div>
+</section>
+
+<section id="education">
+<h2>EDUCATION</h2>
+<div class="education-grid">
+<div class="card">
+<h3>BTech in CSE</h3>
+<p>2023 – 2027</p>
+</div>
+<div class="card">
+<h3>Secondary Education (12th Grade)</h3>
+<p>2021 – 2023</p>
+</div>
+</div>
+</section>
+
+<section id="skills">
+<h2>SKILLS</h2>
+<div class="skills">
+<div class="skill-box">AI/ML</div>
+<div class="skill-box">Python</div>
+<div class="skill-box">Git & GitHub</div>
+<div class="skill-box">HTML & CSS</div>
+<div class="skill-box">JavaScript</div>
+<div class="skill-box">Data Structures & Algorithms</div>
+</div>
+</section>
+
+<section id="projects">
+<h2>PROJECTS</h2>
+<div class="project-grid">
+<a href="https://github.com/avinash2-0/Vision-Transformer-Project" target="_blank" style="text-decoration:none;color:inherit;">
+<div class="card">
+<h3>Vision-Transformer Project</h3>
+<p>Image classification using transformer architecture.</p>
+</div>
+</a>
+</div>
+</section>
+
+<section id="certifications">
+<h2>CERTIFICATIONS</h2>
+<a href="https://credsverse.com/credentials/e1d441ce-79be-4ad1-8f6b-a081ae4d3257" target="_blank" style="text-decoration:none;color:inherit;">
+<div class="card">
+<h3>Cyber Security Training Program</h3>
+</div>
+</a>
+</section>
+
+<section id="contact">
+<h2>CONTACT</h2>
+<div class="card">
+<p>Email: <a href="mailto:avinash42k@gmail.com" style="color:#3b82f6;">avinash42k@gmail.com</a></p>
+<p>Phone: <a href="tel:+916202210548" style="color:#3b82f6;">+91 62022 10548</a></p>
+</div>
+</section>
+
+<footer>
+© 2026 Avinash Utkarsh Singh
+</footer>
+
+</body>
+</html>
