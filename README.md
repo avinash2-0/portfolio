@@ -15,4 +15,3 @@ It showcases my profile, skills, and projects.
 - CSS3
 - Responsive Design
 
-## 📂 Project Structure
